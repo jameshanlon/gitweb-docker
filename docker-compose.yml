@@ -2,5 +2,7 @@ version: '2'
 services:
   gitweb:
     build: .
+    volumes:
+      - ../repos:/opt/repos
     ports:
-      - "5000:5000"
+      - "80:80"
